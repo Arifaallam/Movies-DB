@@ -1,0 +1,91 @@
+/* Movie Card Styling */
+.movie-card {
+  cursor: pointer;
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+  width: 200px; /* Ensure consistent width */
+  text-decoration: none;
+  color: white;
+}
+
+/* Movie Posters */
+.movie-poster,
+.movie-image {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie-poster:hover,
+.movie-image:hover {
+  transform: scale(1.05);
+}
+
+/* Movie List Layout */
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Movie Details Page */
+.movie-details {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding: 20px;
+  color: white;
+  border-top: 2px solid #ddd;
+}
+
+/* Large Movie Poster in Details Page */
+.movie-image-large {
+  width: 250px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+/* Movie Details Text */
+.details {
+  max-width: 500px;
+}
+
+.details h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.details p {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+/* Cast Section */
+.cast {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+/* Actor Styling */
+.actor {
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+.actor-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.actor-photo:hover {
+  transform: scale(1.1);
+}

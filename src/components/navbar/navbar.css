@@ -1,0 +1,79 @@
+.nano {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #14181c;
+  padding: 15px 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nano .logo {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nano-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nano-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #f39c12;
+  }
+}
+
+.search-form {
+  background: #fff;
+  border-radius: 5px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-input {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 2px 8px;
+  color: #666;
+  font-size: 16px;
+}
+.search-button {
+  background-color: #f39c12;
+  border-radius: 0px 5px 5px 0px;
+  padding: 2px 5px;
+  outline: none;
+  border: none;
+  color: white;
+  height: 30px;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .nano {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+
+  .nano-links {
+    margin-top: 15px;
+  }
+
+  .search-form {
+    margin-top: 15px;
+  }
+}

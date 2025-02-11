@@ -1,0 +1,47 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-size: 22px;
+  margin: 80px 0px 20px 0px;
+}
+
+.action-btn {
+  cursor: pointer;
+  background: #14181c;
+  color: #fff;
+  border: 1px solid #14181c;
+  outline: none;
+  height: 35px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #fff;
+    color: #14181c;
+    border: 1px solid #14181c;
+  }
+}
+
+.arrow-icon {
+  font-size: 22px;
+}
+
+.page {
+  font-size: 26px;
+  font-weight: 600;
+  padding: 0px 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .pagination {
+    margin: 50px 0px 20px 0px;
+  }
+  .page {
+    font-size: 18px;
+  }
+}
